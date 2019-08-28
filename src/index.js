@@ -25,6 +25,21 @@ class App extends React.Component {
         this.setState(newState);
       });
   };
+  onGetMyFavorites = () => {
+    fetch(
+      "https://api.thecatapi.com/v1/favourites",
+      { method: "GET" },
+      {
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key": "85eb2c59-14e5-4281-ba81-ae03cde1d50a"
+        },
+        body: JSON.stringify({
+          image_id: this.state.imgObj.id
+        })
+      }
+    ).then(response => response.json());
+  };
 
   componentWillMount() {
     this.onLoadMorePics();
@@ -52,7 +67,7 @@ class App extends React.Component {
           <div>
             <button onClick={this.onLoadMorePics}>Load More Pics</button>
             <button onClick={this.onMarkAsFavorite}>Mark as Favorite</button>
-            
+            <button onClick={this.onGetMyFavorites}>Show my favourites</button>
           </div>
           <img
             src={this.state.imgObj.url}
