@@ -1,12 +1,17 @@
 # Cat app features
-
+There are three buttons inside the app:
+- Button 1 (Load More Pics): It will load more pics of cats.
+- Button 2 (Mark As Favorite): It will mark user favorite pic.
+- Button 3 (Show My Favorite): It will show all the pics user marked as favorite in a grid.
 
 # Cat app screenshots
-<img width="1438" alt="Screen Shot 2019-08-30 at 21 56 23" src="https://user-images.githubusercontent.com/47273243/64022574-81be8300-cb71-11e9-9217-cefe1b930125.png">
-<img width="1435" alt="Screen Shot 2019-08-30 at 21 55 51" src="https://user-images.githubusercontent.com/47273243/64022575-81be8300-cb71-11e9-923a-0192903af9fb.png">
-<img width="1435" alt="Screen Shot 2019-08-30 at 21 55 30" src="https://user-images.githubusercontent.com/47273243/64022576-82571980-cb71-11e9-9c1f-508c96c34ac6.png">
 <img width="1438" alt="Screen Shot 2019-08-30 at 21 55 07" src="https://user-images.githubusercontent.com/47273243/64022577-82571980-cb71-11e9-912a-94f99e307687.png">
 
+<img width="1438" alt="Screen Shot 2019-08-30 at 21 56 23" src="https://user-images.githubusercontent.com/47273243/64022574-81be8300-cb71-11e9-9217-cefe1b930125.png">
+
+<img width="1435" alt="Screen Shot 2019-08-30 at 21 55 51" src="https://user-images.githubusercontent.com/47273243/64022575-81be8300-cb71-11e9-923a-0192903af9fb.png">
+
+<img width="1435" alt="Screen Shot 2019-08-30 at 21 55 30" src="https://user-images.githubusercontent.com/47273243/64022576-82571980-cb71-11e9-9c1f-508c96c34ac6.png">
 
 # CRA Readme
 
