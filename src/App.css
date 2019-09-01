@@ -10,10 +10,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.title {
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .display {
   margin-left: auto;
   margin-right: auto;
@@ -27,16 +24,4 @@
 .emoji {
   margin-left: 35px;
   margin-right: 35px;
-}
-.button1 {
-  width: 100px;
-  height: 20px;
-}
-.button2 {
-  width: 110px;
-  height: 20px;
-}
-.button3 {
-  width: 120px;
-  height: 20px;
 }

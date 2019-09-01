@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
+import Title from "./Components/Title";
+import Button from "./Components/Button";
+import Display1 from "./Components/Display1";
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -83,9 +87,7 @@ class App extends React.Component {
       );
     }
     return (
-      <button className="button2" onClick={this.onMarkAsFavorite}>
-        Mark as Favorite
-      </button>
+      <Button onButtonClick={this.onMarkAsFavorite}>Mark as Favorite</Button>
     );
   };
 
@@ -93,13 +95,6 @@ class App extends React.Component {
     const jsxArray = [];
     for (let i = 0; i < this.state.favoritesData.length; i++) {
       jsxArray.push(
-        // <img
-        //   src={this.state.favoritesData[i].image.url}
-        //   alt="fav cat images"
-        //   style={{
-        //     width: "10%"
-        //   }}
-        // />
         <div
           style={{
             backgroundImage: `url("${this.state.favoritesData[i].image.url}")`,
@@ -122,17 +117,13 @@ class App extends React.Component {
     } else {
       return (
         <div className="container">
-          <div className="title">
-            <h1>CAT'S WORLD</h1>
-          </div>
+          <Title title="Cat's World" />
           <div className="button-group">
-            <button className="button1" onClick={this.onLoadMorePics}>
-              Load More Pics
-            </button>
+            <Button onButtonClick={this.onLoadMorePics}>Load More Pics</Button>
             {this.getMarkAsFavButton()}
-            <button className="button3" onClick={this.onGetMyFavorites}>
+            <Button onButtonClick={this.onGetMyFavorites}>
               Show my favourites
-            </button>
+            </Button>
           </div>
           <br />
           <br />
@@ -140,14 +131,14 @@ class App extends React.Component {
             this.getFavoriteComponent()
           ) : (
             <div className="display">
-              <img
-                src={this.state.newCatData.url}
-                alt="catimage"
-                style={{
+              <Display1>
+                image={this.state.newCatData.url}
+                sty=
+                {{
                   maxWidth: "100%",
                   maxHeight: "100%"
                 }}
-              />
+              </Display1>
             </div>
           )}
         </div>
