@@ -7,8 +7,10 @@ There are three buttons inside the app:
 # Cat app screenshots
 ## On clicking Load More Pics:
 <img width="1438" alt="Screen Shot 2019-08-30 at 21 55 07" src="https://user-images.githubusercontent.com/47273243/64022577-82571980-cb71-11e9-912a-94f99e307687.png">
+
 ## On clicking Mark As Favorite:
 <img width="1435" alt="Screen Shot 2019-08-30 at 21 55 30" src="https://user-images.githubusercontent.com/47273243/64022576-82571980-cb71-11e9-9c1f-508c96c34ac6.png">
+
 ## On clicking Show My Favorite:
 <img width="1438" alt="Screen Shot 2019-08-30 at 21 56 23" src="https://user-images.githubusercontent.com/47273243/64022574-81be8300-cb71-11e9-9217-cefe1b930125.png">
 
