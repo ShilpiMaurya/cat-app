@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./App.css";
+import "./index.css";
 import Title from "./Components/Title";
 import Button from "./Components/Button";
-import Display1 from "./Components/Display1";
+import Displayimage from "./Components/Displayimage";
+import DispalyGrid from "./Components/DisplayGrid";
 
 class App extends React.Component {
   constructor(props) {
@@ -28,6 +29,7 @@ class App extends React.Component {
     this.setState({ isNewCatloading: true });
     fetch("https://api.thecatapi.com/v1/images/search")
       .then(response => {
+        console.log("res", response);
         return response.json();
       })
       .then(data => {
@@ -91,26 +93,6 @@ class App extends React.Component {
     );
   };
 
-  getFavoriteComponent = () => {
-    const jsxArray = [];
-    for (let i = 0; i < this.state.favoritesData.length; i++) {
-      jsxArray.push(
-        <div
-          style={{
-            backgroundImage: `url("${this.state.favoritesData[i].image.url}")`,
-            width: "400px",
-            height: "400px",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            margin: "5px",
-            borderRadius: "5px"
-          }}
-        ></div>
-      );
-    }
-    return <div className="shilpi">{jsxArray}</div>;
-  };
-
   render() {
     if (this.state.isNewCatLoading) {
       return <h1>Loading.....</h1>;
@@ -128,18 +110,12 @@ class App extends React.Component {
           <br />
           <br />
           {this.state.favoritesData ? (
-            this.getFavoriteComponent()
+            <DispalyGrid favoritesData={this.state.favoritesData} />
           ) : (
-            <div className="display">
-              <Display1>
-                image={this.state.newCatData.url}
-                sty=
-                {{
-                  maxWidth: "100%",
-                  maxHeight: "100%"
-                }}
-              </Display1>
-            </div>
+            <Displayimage
+              image={this.state.newCatData.url}
+              imagestyle={{ maxWidth: "100%", maxHeight: "100%" }}
+            />
           )}
         </div>
       );
