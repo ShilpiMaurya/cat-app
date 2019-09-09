@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Title from "./Components/Title";
 import LoadMoreCats from "./LoadMoreCats/index";
 import GetMyFavorites from "./GetMyFavorites";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 
 class App extends React.Component {
   constructor(props) {
@@ -17,23 +18,18 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <button
-          onClick={() => {
-            this.setState({ showLoadMoreCats: true, showMyFavorites: false });
-          }}
-        >
-          Tab 1
-        </button>
-        <button
-          onClick={() => {
-            this.setState({ showMyFavorites: true, showLoadMoreCats: false });
-          }}
-        >
-          Tab 2
-        </button>
-        <Title title="Cat`s World" />
-        {this.state.showLoadMoreCats && <LoadMoreCats />}
-        {this.state.showMyFavorites && <GetMyFavorites />}
+        <Tabs>
+          <TabList>
+            <Tab>SHOW NEW CATS</Tab>
+            <Tab>SHOW MY FAVORITE</Tab>
+          </TabList>
+          <TabPanel>
+            <LoadMoreCats />
+          </TabPanel>
+          <TabPanel>
+            <GetMyFavorites />
+          </TabPanel>
+        </Tabs>
       </>
     );
   }
