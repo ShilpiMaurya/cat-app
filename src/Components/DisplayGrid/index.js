@@ -1,12 +1,15 @@
 import React from "react";
 import "./index.css";
 function DisplayGrid(props) {
+  if (!props.favoriteData) {
+    return "No data";
+  }
   const jsxArray = [];
-  for (let i = 0; i < props.favoritesData.length; i++) {
+  for (let i = 0; i < props.favoriteData.length; i++) {
     jsxArray.push(
       <div
         style={{
-          backgroundImage: `url("${props.favoritesData[i].image.url}")`,
+          backgroundImage: `url("${props.favoriteData[i].image.url}")`,
           width: "400px",
           height: "400px",
           backgroundSize: "cover",
