@@ -20,8 +20,8 @@ class App extends React.Component {
       <>
         <Tabs>
           <TabList>
-            <Tab>SHOW NEW CATS</Tab>
-            <Tab>SHOW MY FAVORITE</Tab>
+            <Tab>Show New Cats</Tab>
+            <Tab>Show my favorite Cats</Tab>
           </TabList>
           <TabPanel>
             <LoadMoreCats />
