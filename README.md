@@ -1,13 +1,14 @@
 # Cat app features
-There are three buttons inside the app:
-- Load More Pics : It will load more pics of cats.
-- Mark As Favorite : It will mark user favorite pic.
-- Show My Favorite : It will show all the pics user marked as favorite in a grid.
-
-# Cat app screenshots
+There are two tabs inside the app:
+- Show New Cats: It has two buttons. More Cats (It will display pictures of new cats) and Mark as Favorite (It will mark picture of user's favorite cat).
+- Show My Favorite Cats: It will display pictures of user's favorite cats.
+ # Cat app screenshots
+ ## Show New Cats:
 ![image](https://user-images.githubusercontent.com/47273243/64617570-ab04cc00-d419-11e9-8b70-bf6bf2db431e.png)
 ![image](https://user-images.githubusercontent.com/47273243/64617585-b0faad00-d419-11e9-8537-21a53ed4c92d.png)
+## Mark As Favorite
 ![image](https://user-images.githubusercontent.com/47273243/64617598-b821bb00-d419-11e9-95fd-deda1bb5104c.png)
+## Show My Favorite Cats
 ![image](https://user-images.githubusercontent.com/47273243/64617618-c079f600-d419-11e9-896c-6f6998b008d9.png)
 
 
