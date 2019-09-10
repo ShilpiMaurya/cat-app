@@ -5,14 +5,11 @@ There are three buttons inside the app:
 - Show My Favorite : It will show all the pics user marked as favorite in a grid.
 
 # Cat app screenshots
-## On clicking Load More Pics:
-<img width="1438" alt="Screen Shot 2019-08-30 at 21 55 07" src="https://user-images.githubusercontent.com/47273243/64022577-82571980-cb71-11e9-912a-94f99e307687.png">
+![image](https://user-images.githubusercontent.com/47273243/64617570-ab04cc00-d419-11e9-8b70-bf6bf2db431e.png)
+![image](https://user-images.githubusercontent.com/47273243/64617585-b0faad00-d419-11e9-8537-21a53ed4c92d.png)
+![image](https://user-images.githubusercontent.com/47273243/64617598-b821bb00-d419-11e9-95fd-deda1bb5104c.png)
+![image](https://user-images.githubusercontent.com/47273243/64617618-c079f600-d419-11e9-896c-6f6998b008d9.png)
 
-## On clicking Mark As Favorite:
-<img width="1435" alt="Screen Shot 2019-08-30 at 21 55 30" src="https://user-images.githubusercontent.com/47273243/64022576-82571980-cb71-11e9-9c1f-508c96c34ac6.png">
-
-## On clicking Show My Favorite:
-<img width="1438" alt="Screen Shot 2019-08-30 at 21 56 23" src="https://user-images.githubusercontent.com/47273243/64022574-81be8300-cb71-11e9-9217-cefe1b930125.png">
 
 
 
