@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Components/Button";
 import Displayimage from "../Components/Displayimage";
+import "./index.css";
 export default class LoadMoreCats extends React.Component {
   constructor(props) {
     super(props);
@@ -51,24 +52,32 @@ export default class LoadMoreCats extends React.Component {
   render() {
     return (
       <>
-        {this.state.isNewCatLoading ? (
-          "loading"
-        ) : (
-          <Displayimage
-            image={this.state.newCatData.url}
-            imagestyle={{ maxWidth: "100%", maxHeight: "100%" }}
-          />
-        )}
-        {this.state.isMarkedAsFav ? (
-          <span role="img" aria-labelledby="heart emoji" className="emoji">
-            💕
-          </span>
-        ) : (
-          <Button onButtonClick={this.onMarkAsFavorite}>
-            Mark as Favorite
-          </Button>
-        )}
-        <Button onButtonClick={this.onLoadMorePics}>LoadMoreCats</Button>
+        <div className="display">
+          {this.state.isNewCatLoading ? (
+            "loading"
+          ) : (
+            <Displayimage
+              image={this.state.newCatData.url}
+              imagestyle={{ width: "70vw", height: "40vw" }}
+            />
+          )}
+        </div>
+        <div className="button-group">
+          {this.state.isMarkedAsFav ? (
+            <span role="img" aria-labelledby="heart emoji" className="emoji">
+              💕
+            </span>
+          ) : (
+            <div className="button">
+              <Button onButtonClick={this.onMarkAsFavorite}>
+                Mark as Favorite
+              </Button>
+            </div>
+          )}
+          <div className="button">
+            <Button onButtonClick={this.onLoadMorePics}>More Cats</Button>
+          </div>
+        </div>
       </>
     );
   }

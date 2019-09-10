@@ -5,6 +5,7 @@ import LoadMoreCats from "./LoadMoreCats/index";
 import GetMyFavorites from "./GetMyFavorites";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
+import Title from "./Components/Title";
 
 class App extends React.Component {
   constructor(props) {
@@ -14,14 +15,14 @@ class App extends React.Component {
       showMyFavorites: false
     };
   }
-
   render() {
     return (
-      <>
+      <div className="container">
+        <Title title="Cat`s World" className="text" />
         <Tabs>
-          <TabList>
+          <TabList className="tab">
             <Tab>Show New Cats</Tab>
-            <Tab>Show my favorite Cats</Tab>
+            <Tab>Show My favorite Cats</Tab>
           </TabList>
           <TabPanel>
             <LoadMoreCats />
@@ -30,7 +31,7 @@ class App extends React.Component {
             <GetMyFavorites />
           </TabPanel>
         </Tabs>
-      </>
+      </div>
     );
   }
 }

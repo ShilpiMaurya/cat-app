@@ -4,7 +4,7 @@ import "./index.css";
 const Displayimage = props => {
   console.log("props", props.image);
   return (
-    <div className="display">
+    <div className="img">
       <img src={props.image} alt="catimage" style={props.imagestyle} />
     </div>
   );

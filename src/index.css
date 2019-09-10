@@ -3,15 +3,13 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
 }
-.button-group {
-  display: flex;
-  flex-direction: row;
-  margin-left: auto;
-  margin-right: auto;
+body {
+  margin: 10px;
 }
-
-.emoji {
-  margin-left: 35px;
-  margin-right: 35px;
+.tab {
+  margin-left: 12%;
+  font-weight: 900;
+  font-family: "Times New Roman", Times, serif;
 }
