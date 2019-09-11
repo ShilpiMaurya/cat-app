@@ -17,9 +17,11 @@ App- link: https://shilpimaurya.github.io/cat-app/
 ## Responsive design
 
 ### HD
+![image](https://user-images.githubusercontent.com/47273243/64712763-bda10300-d4f6-11e9-86fe-ac13c100865e.png)
 ### Tablet
+![image](https://user-images.githubusercontent.com/47273243/64712781-c8f42e80-d4f6-11e9-896e-425e4c0a21fb.png)
 ### Mobile
-
+![image](https://user-images.githubusercontent.com/47273243/64712801-d27d9680-d4f6-11e9-873f-8f540882e053.png)
 ## SEO
 All meta-tags for SEO have been taken care of
 
