@@ -6,6 +6,10 @@
   width: 80vw;
 }
 
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
 @media only screen and (max-width: 1280px) {
   /* HD */
 }

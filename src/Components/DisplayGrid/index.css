@@ -3,14 +3,4 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  overflow: hidden;
-}
-.fav-cats {
-  width: 400px;
-  height: 400px;
-  background-size: cover;
-  background-color: grey;
-  background-position: center;
-  margin: 5px;
-  border-radius: 5px;
 }
