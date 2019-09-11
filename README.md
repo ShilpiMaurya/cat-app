@@ -12,6 +12,14 @@ There are two tabs inside the app:
 ![image](https://user-images.githubusercontent.com/47273243/64617618-c079f600-d419-11e9-896c-6f6998b008d9.png)
 
 
+## Responsive design
+
+### HD
+### Tablet
+### Mobile
+
+## SEO
+All meta-tags for SEO have been taken care of
 
 
 # CRA Readme
