@@ -2,6 +2,8 @@
 There are two tabs inside the app:
 - Show New Cats: It has two buttons. More Cats (It will display pictures of new cats) and Mark as Favorite (It will mark picture of user's favorite cat).
 - Show My Favorite Cats: It will display pictures of user's favorite cats.
+
+App- link: https://shilpimaurya.github.io/cat-app/
  # Cat app screenshots
  ## Show New Cats:
 ![image](https://user-images.githubusercontent.com/47273243/64617570-ab04cc00-d419-11e9-8b70-bf6bf2db431e.png)
