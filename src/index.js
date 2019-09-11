@@ -19,18 +19,20 @@ class App extends React.Component {
     return (
       <div className="container">
         <Title title="Cat`s World" className="text" />
-        <Tabs>
-          <TabList className="tab">
-            <Tab>Show New Cats</Tab>
-            <Tab>Show My favorite Cats</Tab>
-          </TabList>
-          <TabPanel>
-            <LoadMoreCats />
-          </TabPanel>
-          <TabPanel>
-            <GetMyFavorites />
-          </TabPanel>
-        </Tabs>
+        <div className="tab-container">
+          <Tabs>
+            <TabList>
+              <Tab>Show New Cats</Tab>
+              <Tab>Show My favorite Cats</Tab>
+            </TabList>
+            <TabPanel>
+              <LoadMoreCats />
+            </TabPanel>
+            <TabPanel>
+              <GetMyFavorites />
+            </TabPanel>
+          </Tabs>
+        </div>
       </div>
     );
   }

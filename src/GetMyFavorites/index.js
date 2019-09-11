@@ -1,5 +1,6 @@
 import React from "react";
 import DispalyGrid from "../Components/DisplayGrid";
+import "./index.css";
 export default class GetMyFavorites extends React.Component {
   constructor(props) {
     super(props);
@@ -35,7 +36,16 @@ export default class GetMyFavorites extends React.Component {
     return (
       <>
         {this.state.isFavoritesLoading ? (
-          "Loading..."
+          <div
+            style={{
+              display: "block",
+              height: "25px",
+              textAlign: "center",
+              lineHeight: "125px"
+            }}
+          >
+            <h1>Loading.....</h1>
+          </div>
         ) : (
           <DispalyGrid favoriteData={this.state.favoritesData} />
         )}

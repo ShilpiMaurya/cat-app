@@ -13,6 +13,7 @@ function DisplayGrid(props) {
           width: "400px",
           height: "400px",
           backgroundSize: "cover",
+          backgroundColor: "grey",
           backgroundPosition: "center",
           margin: "5px",
           borderRadius: "5px"

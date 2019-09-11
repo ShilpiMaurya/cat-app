@@ -7,4 +7,25 @@ button {
   font-weight: 900;
   font-family: "Times New Roman", Times, serif;
   font-size: 15px;
+  margin: 20px;
+  outline: none;
+  transition: background-color color ease-in 500ms;
+}
+
+button:hover {
+  background-color: darkgrey;
+  color: white;
+}
+@media only screen and (max-width: 446px) {
+  button {
+    font-size: 14px;
+    min-width: 100px;
+    height: 20px;
+  }
+}
+@media only screen and (max-width: 363px) {
+  button {
+    font-size: 10px;
+    min-width: 80px;
+  }
 }

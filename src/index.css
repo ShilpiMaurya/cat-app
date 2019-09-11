@@ -1,15 +1,28 @@
 .container {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   justify-content: center;
+  width: 80vw;
 }
+
 body {
-  margin: 10px;
-}
-.tab {
-  margin-left: 12%;
-  font-weight: 900;
   font-family: "Times New Roman", Times, serif;
+}
+
+@media only screen and (max-width: 1280px) {
+  /* HD */
+}
+
+@media only screen and (max-width: 768px) {
+  /* TABLET */
+}
+@media only screen and (max-width: 540px) {
+  /* MOBILE-WIDE */
+  .container {
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 420px) {
+  /* MOBILE */
 }

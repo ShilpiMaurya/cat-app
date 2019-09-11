@@ -51,15 +51,22 @@ export default class LoadMoreCats extends React.Component {
   };
   render() {
     return (
-      <>
+      <div>
         <div className="display">
           {this.state.isNewCatLoading ? (
-            "loading"
+            <div
+              style={{
+                display: "block",
+                height: "25px",
+                textAlign: "center",
+                lineHeight: "125px",
+                
+              }}
+            >
+              <h1>Loading.....</h1>
+            </div>
           ) : (
-            <Displayimage
-              image={this.state.newCatData.url}
-              imagestyle={{ width: "70vw", height: "40vw" }}
-            />
+            <Displayimage image={this.state.newCatData.url} />
           )}
         </div>
         <div className="button-group">
@@ -78,7 +85,7 @@ export default class LoadMoreCats extends React.Component {
             <Button onButtonClick={this.onLoadMorePics}>More Cats</Button>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }
