@@ -36,16 +36,7 @@ export default class GetMyFavorites extends React.Component {
     return (
       <>
         {this.state.isFavoritesLoading ? (
-          <div
-            style={{
-              display: "block",
-              height: "25px",
-              textAlign: "center",
-              lineHeight: "125px"
-            }}
-          >
-            <h1>Loading.....</h1>
-          </div>
+          <div></div>
         ) : (
           <DispalyGrid favoriteData={this.state.favoritesData} />
         )}

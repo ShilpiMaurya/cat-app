@@ -8,15 +8,9 @@ function DisplayGrid(props) {
   for (let i = 0; i < props.favoriteData.length; i++) {
     jsxArray.push(
       <div
+        className="fav-cats"
         style={{
-          backgroundImage: `url("${props.favoriteData[i].image.url}")`,
-          width: "400px",
-          height: "400px",
-          backgroundSize: "cover",
-          backgroundColor: "grey",
-          backgroundPosition: "center",
-          margin: "5px",
-          borderRadius: "5px"
+          backgroundImage: `url("${props.favoriteData[i].image.url}")`
         }}
       ></div>
     );

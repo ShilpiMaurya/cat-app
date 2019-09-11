@@ -54,17 +54,7 @@ export default class LoadMoreCats extends React.Component {
       <div>
         <div className="display">
           {this.state.isNewCatLoading ? (
-            <div
-              style={{
-                display: "block",
-                height: "25px",
-                textAlign: "center",
-                lineHeight: "125px",
-                
-              }}
-            >
-              <h1>Loading.....</h1>
-            </div>
+            <div></div>
           ) : (
             <Displayimage image={this.state.newCatData.url} />
           )}
